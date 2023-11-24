@@ -1,0 +1,57 @@
+<div class="container" *ngIf="unko">
+  <div class="mb-3">
+    <label class="form-label" for="unko-id">Unko id: {{ unko.id }}</label>
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="unko-name">Unko name: </label>
+    <input
+      class="form-control"
+      id="unko-name"
+      [(ngModel)]="unko.name"
+      placeholder="name"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="unko-description">Unko description: </label>
+    <input
+      class="form-control"
+      id="unko-description"
+      [(ngModel)]="unko.description"
+      placeholder="description"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="unko-production-date"
+      >Unko production date:
+    </label>
+    <input
+      class="form-control"
+      id="unko-production-date"
+      [(ngModel)]="unko.productionDate"
+      placeholder="production date"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="unko-unit-price">Unko unit price: </label>
+    <input
+      class="form-control text-end"
+      id="unko-unit-price"
+      [(ngModel)]="unko.unitPrice"
+      placeholder="unit price"
+    />
+  </div>
+  <div class="mb-3">
+    <label class="form-label" for="unko-discount">Unko discount(%): </label>
+    <input
+      class="form-control text-end"
+      id="unko-discount"
+      [(ngModel)]="unko.discount"
+      placeholder="discount"
+    />
+  </div>
+</div>
+
+<!-- <button class="btn btn-primary" type="button" (click)="save()">save</button> -->
+<button class="btn btn-primary ms-1" type="button" (click)="goBack()">
+  go back
+</button>
